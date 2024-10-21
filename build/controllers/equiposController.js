@@ -236,6 +236,7 @@ class EquiposController {
                 const mantenimientosConChequeos = equipo.mantenimientos.map(mantenimiento => ({
                     mantenimientoId: mantenimiento.idMantenimiento,
                     fechaUltimoMantenimiento: mantenimiento.fechaUltimoMantenimiento,
+                    tipoMantenimiento: mantenimiento.tipoMantenimiento,
                     usuario: mantenimiento.usuario,
                     chequeos: mantenimiento.chequeos.filter(chequeo => chequeo.equipo.serial === equipo.serial)
                 }));
