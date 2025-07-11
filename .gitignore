@@ -1,3 +1,4 @@
+# Archivos y carpetas a ignorar
 .vercel
 .env
 node_modules
