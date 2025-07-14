@@ -1,0 +1,30 @@
+{
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "codeium.codeium",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "sonarsource.sonarlint-vscode",
+    "usernamehw.errorlens",
+    "christian-kohler.path-intellisense",
+    "alefragnani.bookmarks",
+    "alefragnani.project-manager",
+    "wix.vscode-import-cost",
+    "bradlc.vscode-tailwindcss",
+    "ritwickdey.liveserver",
+    "ecmel.vscode-html-css",
+    "naumovs.color-highlight",
+    "dsznajder.es7-react-js-snippets",
+    "orta.vscode-jest",
+    "ms-playwright.playwright",
+    "msjsdiag.debugger-for-chrome",
+    "humao.rest-client",
+    "mtxr.sqltools",
+    "prisma.prisma",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "aaron-bond.better-comments",
+    "mikestead.dotenv"
+  ]
+}
