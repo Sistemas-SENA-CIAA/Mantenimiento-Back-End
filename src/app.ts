@@ -32,6 +32,15 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Hola mundo')
 });
 
+// Health check endpoint para Railway
+app.get('/health', (req: Request, res: Response) => {
+    res.status(200).json({ 
+        status: 'OK', 
+        timestamp: new Date().toISOString(),
+        service: 'Mantenimiento Backend'
+    });
+});
+
 //Servimos las imágenes de manera estática desde la carpeta uploads
 app.use('/uploads', express.static('uploads'));
 
