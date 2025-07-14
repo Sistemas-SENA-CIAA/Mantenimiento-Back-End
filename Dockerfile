@@ -6,17 +6,20 @@ WORKDIR /app
 COPY package*.json ./
 COPY tsconfig.json ./
 
-# Instalar dependencias
-RUN npm install
+# Instalar dependencias (incluyendo TypeScript en producción)
+RUN npm install --include=dev
 
 # Copiar código fuente
 COPY . .
 
 # Compilar TypeScript
-RUN npm run build
+RUN npx tsc
+
+# Limpiar dependencias de desarrollo (opcional)
+RUN npm prune --production
 
 # Exponer puerto
-EXPOSE 3000
+EXPOSE 6506
 
 # Comando de inicio
-CMD ["npm", "start"]
+CMD ["node", "build/index.js"]
